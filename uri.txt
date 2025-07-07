@@ -1,0 +1,5 @@
+
+Delete: https://exam2-ztla.onrender.com/api/compact-discs/:id
+{
+	“Product Deleted”
+}
