@@ -1,0 +1,30 @@
+{
+  "name": "exam2",
+  "version": "1.0.0",
+  "description": "Proyecto de examen en Node.js con Express y MongoDB",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sebaslv1503/Exam2.git"
+  },
+  "keywords": [],
+  "author": "Sebastián Lasso",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Sebaslv1503/Exam2/issues"
+  },
+  "homepage": "https://github.com/Sebaslv1503/Exam2#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^17.0.1",
+    "express": "^5.1.0",
+    "mongoose": "^8.16.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.10"
+  }
+}
