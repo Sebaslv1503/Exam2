@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: exam-backend
+    env: node
+    plan: free
+    buildCommand: npm install
+    startCommand: npm start
+    envVars:
+      - key: MONGO_URI
+        value: mongodb+srv://root:slvplanA2003@cluster0.qwwgu15.mongodb.net/examDB?retryWrites=true&w=majority&appName=Cluster0
+    autoDeploy: true
