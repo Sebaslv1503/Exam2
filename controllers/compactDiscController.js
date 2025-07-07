@@ -1,4 +1,4 @@
-const CompactDisc = require('../models/compactDisc');
+const CompactDisc = require('../models/CompactDisc');
 
 exports.deleteCompactDisc = async (req, res) => {
   try {
