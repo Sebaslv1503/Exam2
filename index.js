@@ -7,11 +7,11 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-mongoose.connect('mongodb+srv://root:slvplanA2003@cluster0.qwwgu15.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0', {
+mongoose.connect(process.env.MONGO_URI, {
   useNewUrlParser: true,
   useUnifiedTopology: true
 })
-.then(() => console.log('✅ Conected to MongoDB'))
+.then(() => console.log('✅ Coneected to MongoDB'))
 .catch(err => console.error('❌ Conexion Error:', err));
 
 const apiRoutes = require('./routes/api');
@@ -26,11 +26,5 @@ app.use('/api/compact-discs', compactDiscRoutes);
 
 const PORT = process.env.PORT || 3009;
 app.listen(PORT, () => {
-  console.log(`🚀 Server running at http://localhost:${PORT}`);
+  console.log(`🚀 Servidor corriendo en http://localhost:${PORT}`);
 });
-
-
-
-
-
-

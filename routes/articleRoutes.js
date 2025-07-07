@@ -1,10 +1,11 @@
 const express = require('express');
 const router = express.Router();
-const controller = require('../controllers/articleController');
+const articleController = require('../controllers/articleController');
 
-router.post('/', controller.createArticle);
-router.get('/', controller.getAllArticles);
-router.put('/:id', controller.updateArticle);
-router.delete('/:id', controller.deleteArticle);
+// CRUD routes
+router.post('/articles', articleController.createArticle);
+router.get('/articles', articleController.getAllArticles);
+router.put('/articles/:id', articleController.updateArticleById);
+router.delete('/articles/:id', articleController.deleteArticleById);
 
 module.exports = router;
